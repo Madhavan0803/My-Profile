@@ -62,6 +62,7 @@ header {
     
     .container{
         padding-left: 10px;
+        max-width: 1000px;
     }
 }
 
@@ -81,7 +82,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 90vh;
+    height: 70vh;
     position: relative;
 }
 
@@ -237,10 +238,81 @@ footer p {
     transform: scale(1.1);
 }
 
+.skill-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    margin-top: 20%;
+}
+
+.skill-icons a {
+    text-decoration: none;
+}
+
+.skill-icons img {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s;
+}
+
+.skill-icons img:hover {
+    transform: scale(1.1);
+}
+
+.project-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    margin-top: 20%;
+}
+
+.project-icons a {
+    text-decoration: none;
+}
+
+.project-icons img {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s;
+}
+
+.project-icons img:hover {
+    transform: scale(1.1);
+}
+
 @media screen and (max-width: 768px) {
     .hero-section {
         flex-direction: column;
         text-align: center;
+    }
+
+    .project-icons {
+        display: flex;
+        gap: 15px;
+        justify-content: space-around;
+        margin-top: 20%;
+        flex-wrap: wrap;
+
+    }
+
+    .project-icons img {
+        width: 150px;
+        height: 150px;
+        transition: transform 0.3s;
+    }
+
+    .skill-icons img {
+        width: 150px;
+        height: 150px;
+        transition: transform 0.3s;
+    }
+
+    .skill-icons {
+        display: flex;
+        gap: 15px;
+        justify-content: space-around;
+        margin-top: 20%;
+        flex-wrap: wrap;
     }
 
     .hero-content {
